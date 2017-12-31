@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>objekt update</title>
+</head>
+<body>
+<h1>Objekt update</h1>
+
+<form action="../controllers/updateobjekt.php" method="get">
+    <label for="fornavn">Fornavn</label><br>
+    <input type="text" name="ChangeString" id="fornavn" value="{{ obj.ChangeString }}"/><br>
+
+    <label for="efternavn">Efternavn</label><br>
+    <input type="text" name="ChangeString1" id="efternavn" value="{{ obj.ChangeString1 }}"/><br>
+
+    <label for="løn">Løn</label><br>
+    <input type="number" id="løn" name="ChangeDouble" value="{{ obj.ChangeDouble }}"/><br>
+
+    <label for="arbejdsdage">Arbejdsdage</label><br>
+    <input type="number" id="arbejdsdage" name="ChangeInteger" value="{{ obj.ChangeInteger }}"/><br>
+
+    <label for="id">Bekræft at din intention er at ændre et objekt ved at indsætte ID her</label><br>
+    <input type="number" id="id" name="Id" value="{{ obj.Id }}"/>
+
+    <input type="submit" value="Update"/>
+</form>
+
+</body>
+</html>

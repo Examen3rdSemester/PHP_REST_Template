@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kaspers Eksamens PHP</title>
+</head>
+<body>
+<h1>Kaspers eksamens php</h1>
+<h2>Listen over alle objekter i databasen</h2>
+<a href="controllers/alleobjekter.php">Oversigt</a>
+<h2>Tilføj et objekt til database</h2>
+
+<form action="controllers/addobjekt.php" method="post">
+    <label for="fornavn">Fornavn</label><br>
+    <input type="text" id="fornavn" name="ChangeString"/><br>
+
+    <label for="efternavn">Efternavn</label><br>
+    <input type="text" id="efternavn" name="ChangeString1"/><br>
+
+    <label for="løn">Løn</label><br>
+    <input type="number" id="løn" name="ChangeDouble"/><br>
+
+    <label for="arbejdsdage">Arbejdsdage</label><br>
+    <input type="number" id="arbejdsdage" name="ChangeInteger"/>
+
+    <input type="submit" value="Add"/>
+</form>
+</body>
+</html>
